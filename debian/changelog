@@ -1,0 +1,213 @@
+fcitx-qt5 (1.2.6.3-1+u001+deepin1) UNRELEASED; urgency=medium
+
+  * update
+  * update
+
+ -- Debian Input Method Team <debian-input-method@lists.debian.org>  Fri, 09 Dec 2022 10:58:06 +0800
+
+fcitx-qt5 (1.2.6.3-1) experimental; urgency=medium
+
+  * 龙芯1050集成
+
+ -- chenshijie <chenshijie@uniontech.com>  Fri, 21 Dec 2021 16:39:00 -0500
+
+fcitx-qt5 (1.2.5-2~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * debian/control: Rename package fcitx5-module-quickphrase-editor
+    back to fcitx-module-quickphrase-editor. The current design has
+    made it incompatible with fcitx5. (Closes: #964189)
+  * debian/control: Bump Standards-Version to 4.5.1.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 22 Jan 2021 16:01:45 -0500
+
+fcitx-qt5 (1.2.5-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/libfcitx-qt5-1.symbols: Add new symbols.
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 05 Aug 2020 14:10:03 -0400
+
+fcitx-qt5 (1.2.4+git20200609-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream snapshot (2020-06-09).
+    + Compatible with kcm-fcitx 0.5.6.
+  * debian/control:
+    + Bump Standards-Version to 4.5.0.
+    + Bump debhelper compat to v13.
+  * debian/upstream/signing-key.asc: Since we are using snapshot
+    tarball, disable key signing check for now. This should be
+    reverted with next upload.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 03 Jul 2020 11:00:03 -0400
+
+fcitx-qt5 (1.2.4-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release 1.2.4.
+  * debian/control:
+    + Bump Standards-Version to 4.4.1.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 26 Nov 2019 14:44:13 -0500
+
+fcitx-qt5 (1.2.3-3) unstable; urgency=medium
+
+  * Team upload.
+  * Rebuild after Debian Buster release.
+  * debian/control:
+    + Bump Standards-Version to 4.4.0.
+    + Bump debhelper compat to v12.
+    + No longer let fcitx5-module-quickphrase-editor provide
+      fcitx-module-quickphrase-editor since the new fcitx is
+      declaring "Breaks:" relationship on the latter one.
+  * debian/libfcitx-qt5-1.symbols: Add new symbols.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 23 Sep 2019 18:30:02 -0400
+
+fcitx-qt5 (1.2.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control: Update Vcs-* field and use the repo under Debian
+    Salsa input-method team.
+  * debian/control: Bump Standards-Version to 4.2.1 (no changes needed).
+  * debian/copyright: Update upstream src url to gitlab.com project.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 19 Oct 2018 13:58:48 -0400
+
+fcitx-qt5 (1.2.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    + Fix FTBFS with Qt 5.11.
+  * Apply "wrap-and-sort -abst".
+  * debian/control: Update YunQiang Su's email address with @debian.org one.
+  * Drop backported patches.
+
+ -- Boyuan Yang <073plan@gmail.com>  Tue, 03 Jul 2018 11:18:04 +0800
+
+fcitx-qt5 (1.2.2-2) unstable; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 4.1.4. (no changes needed)
+  * d/patches: Backport upstream patch to fix FTBFS with Qt 5.11.
+  * d/control: Fix versioned break relationship for quickphrase editor.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sat, 28 Apr 2018 11:08:45 +0800
+
+fcitx-qt5 (1.2.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 4.1.3. (no changes needed)
+  * Bump debhelper compat to v11.
+  * d/copyright: Update information.
+  * d/rules: Enable full hardening.
+  * d/control: Add package fcitx-module-quickphrase-editor, migrated
+    from src:fcitx.
+  * d/control: Add package libfcitx-qt5-data to provide l10n files.
+  * d/control: Use debian-input-method maillist in maintainer field.
+
+ -- Boyuan Yang <073plan@gmail.com>  Fri, 16 Feb 2018 11:13:46 +0800
+
+fcitx-qt5 (1.1.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Refresh packaging instructions.
+    + Use canonical Vcs URL.
+    + Limit cmake version explicitly.
+  * Drop transitional dummy package fcitx-libs-qt5.
+    (real package in jessie; dummy in stretch; removed in buster)
+  * Point d/watch to download.fcitx-im.org.
+
+ -- Boyuan Yang <073plan@gmail.com>  Thu, 28 Sep 2017 00:18:54 +0800
+
+fcitx-qt5 (1.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Imported Upstream version 1.1.0 (Closes: #873063, #851953)
+  * d/watch: change upstream url to github
+  * Remove libfcitx-qt5-dbg
+  * Update compat, debhelper to 10
+  * Change various insecure url to https
+  * Use dh_missing --fail-missing instead
+  * Install fcitx-qt5-gui-wrapper
+  * Bump Standards-Version to 4.1.0
+  * Update symbols
+
+ -- Shengjing Zhu <i@zhsj.me>  Mon, 28 Aug 2017 18:15:36 +0800
+
+fcitx-qt5 (1.0.5-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.0.5
+
+ -- Aron Xu <aron@debian.org>  Fri, 25 Dec 2015 15:51:50 +0800
+
+fcitx-qt5 (1.0.4-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.0.4
+  * Update symbols
+  * Update path of CMake files
+
+ -- Aron Xu <aron@debian.org>  Fri, 30 Oct 2015 17:03:51 +0800
+
+fcitx-qt5 (1.0.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update debian/copyright
+  * Bump package name to libfcitx-qt5-1.
+  * Add extra-cmake-modules to B-D
+  * Update install file and symbols
+  * Update homepage, update description of transitional package
+
+ -- Aron Xu <aron@debian.org>  Tue, 10 Feb 2015 01:57:55 +0800
+
+fcitx-qt5 (0.1.2-4) experimental; urgency=medium
+
+  * Update symbols file for arm and power architectures.
+
+ -- Aron Xu <aron@debian.org>  Mon, 17 Nov 2014 23:02:02 +0800
+
+fcitx-qt5 (0.1.2-3) experimental; urgency=medium
+
+  * Allow parallel building.
+  * Transit package names to libfcitx-qt5 and friends.
+  * Remove unused ${shlib:Depends}.
+  * Update copyright information.
+  * Disable DH_VERBOSE.
+  * Bump std-ver to 3.9.6
+  * Add symbols file for library package.
+
+ -- Aron Xu <aron@debian.org>  Tue, 11 Nov 2014 00:09:01 +0800
+
+fcitx-qt5 (0.1.2-2) unstable; urgency=low
+
+  * Add libegl1-mesa-dev to B-D (Closes: #753204)
+    Thanks lisandro@d.o for the solution.
+
+ -- Aron Xu <aron@debian.org>  Sun, 06 Jul 2014 01:44:29 +0800
+
+fcitx-qt5 (0.1.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Aron Xu <aron@debian.org>  Thu, 29 May 2014 22:09:29 +0800
+
+fcitx-qt5 (0.1.1-3) unstable; urgency=low
+
+  * debian/control: recommends fcitc-frontend-qt5.
+
+ -- Aron Xu <aron@debian.org>  Mon, 07 Oct 2013 20:37:17 +0800
+
+fcitx-qt5 (0.1.1-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Aron Xu <aron@debian.org>  Sun, 06 Oct 2013 17:31:49 +0800
+
+fcitx-qt5 (0.1.1-1) experimental; urgency=low
+
+  * Initial release (Closes: #708322).
+
+ -- Aron Xu <aron@debian.org>  Wed, 15 May 2013 14:13:09 +0800
