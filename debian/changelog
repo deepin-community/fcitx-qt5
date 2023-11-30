@@ -1,25 +1,55 @@
-fcitx-qt5 (1.2.6.3-1+u001+deepin1) UNRELEASED; urgency=medium
-
-  * update
-  * update
-
- -- Debian Input Method Team <debian-input-method@lists.debian.org>  Fri, 09 Dec 2022 10:58:06 +0800
-
-fcitx-qt5 (1.2.6.3-1) experimental; urgency=medium
-
-  * 龙芯1050集成
-
- -- chenshijie <chenshijie@uniontech.com>  Fri, 21 Dec 2021 16:39:00 -0500
-
-fcitx-qt5 (1.2.5-2~exp1) experimental; urgency=medium
+fcitx-qt5 (1.2.7-2) unstable; urgency=medium
 
   * Team upload.
-  * debian/control: Rename package fcitx5-module-quickphrase-editor
-    back to fcitx-module-quickphrase-editor. The current design has
-    made it incompatible with fcitx5. (Closes: #964189)
-  * debian/control: Bump Standards-Version to 4.5.1.
+  * Enable Qt6 support.
 
- -- Boyuan Yang <byang@debian.org>  Fri, 22 Jan 2021 16:01:45 -0500
+ -- Boyuan Yang <byang@debian.org>  Wed, 16 Mar 2022 11:59:18 -0400
+
+fcitx-qt5 (1.2.7-1.2) unstable; urgency=high
+
+  * Team upload.
+  * Do not let fcitx-module-quickphrase-editor5 provide
+    fcitx-module-quickphrase-editor. (Closes: #1005003)
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 06 Feb 2022 14:46:41 -0500
+
+fcitx-qt5 (1.2.7-1.1) unstable; urgency=medium
+
+  * Team upload.
+  * Do not bump version string to -2 to preserve qt6
+    package in Debian experimental.
+  * Rename fcitx5-module-quickphrase-editor to
+    fcitx-module-quickphrase-editor5. This package now has nothing
+    to do with fcitx5. (Closes: #964189)
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 14 Jan 2022 11:04:03 -0500
+
+fcitx-qt5 (1.2.7-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/rules: Prepare for Qt6 infrastructure.
+  * Refresh symbol files.
+  * debian/copyright: Update copyright information.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 07 Jan 2022 22:02:16 -0500
+
+fcitx-qt5 (1.2.6-2) unstable; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 4.6.0.
+
+  [ Gunnar Hjalmarsson ]
+  * Tweak symbols file for ppc64el on Ubuntu
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 22 Oct 2021 15:16:46 -0400
+
+fcitx-qt5 (1.2.6-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 17 Aug 2021 21:51:07 -0400
 
 fcitx-qt5 (1.2.5-1) unstable; urgency=medium
 

@@ -7,14 +7,16 @@ Uploaders:
  YunQiang Su <syq@debian.org>,
 Build-Depends:
  cmake (>= 3.1),
- debhelper-compat (= 12),
+ debhelper-compat (= 13),
  extra-cmake-modules (>= 1.4.0),
  fcitx-libs-dev (>= 1:4.2.8),
  intltool,
  pkg-config,
  qtbase5-dev,
  qtbase5-private-dev,
-Standards-Version: 4.5.1
+ qt6-base-dev,
+ qt6-base-private-dev,
+Standards-Version: 4.6.0
 Homepage: https://www.fcitx-im.org
 Vcs-Git: https://salsa.debian.org/input-method-team/fcitx-qt5.git
 Vcs-Browser: https://salsa.debian.org/input-method-team/fcitx-qt5
@@ -44,16 +46,18 @@ Description: Free Chinese Input Toy of X - Qt5 IM Module frontend
  This package provides the Qt5 IM Module frontend, which is necessary
  for Fcitx users who would like to use Qt5 applications.
 
-Package: fcitx-module-quickphrase-editor
+Package: fcitx-module-quickphrase-editor5
 Architecture: any
 Depends:
  libfcitx-qt5-data,
  ${misc:Depends},
  ${shlibs:Depends},
 Replaces:
- fcitx5-module-quickphrase-editor (<< 1.2.5-2),
+ fcitx-module-quickphrase-editor,
+ fcitx5-module-quickphrase-editor,
 Breaks:
- fcitx5-module-quickphrase-editor (<< 1.2.5-2),
+ fcitx-module-quickphrase-editor,
+ fcitx5-module-quickphrase-editor,
 Suggests:
  fcitx-config-gtk | fcitx-config-gtk2 | kde-config-fcitx,
 Multi-Arch: same
@@ -69,8 +73,7 @@ Description: Flexible Input Method Framework - Quick Phrase editor module
  developer-friendly API.
  .
  This package provides the Quick Phrase Editor module for configuration tools
- including fcitx-config-gtk and kde-config-fcitx. It is compatible with both
- fcitx4.
+ including fcitx-config-gtk and kde-config-fcitx. It is specific to fcitx4.
 
 Package: libfcitx-qt5-1
 Architecture: any
@@ -154,3 +157,28 @@ Description: Free Chinese Input Toy of X - Devel files for libfcitx-qt5
  pure Xlib, GTK+, or KDE, and a developer-friendly API.
  .
  This package provides the development files of fcitx-qt5.
+
+Package: fcitx-frontend-qt6
+Architecture: any
+Multi-Arch: same
+Pre-Depends:
+ ${misc:Pre-Depends},
+Depends:
+ fcitx-module-dbus,
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Free Chinese Input Toy of X - Qt6 IM Module frontend
+ Fcitx is the Free Chinese Input Toy of X, which was initially designed
+ for Chinese users, and used XIM protocol. Now it has already evolved
+ into a highly modularized, feature rich input method framework for
+ Unix-like platforms supporting a considerable amount of frontends,
+ backends and modules.
+ .
+ It offers a pleasant and modern experience, with intuitive graphical
+ configuration tools and customizable skins and mapping tables.
+ It is highly modularized and extensible,
+ with GTK+ 2/3 and Qt 4/5 IM Modules, support for UIs based on Fbterm,
+ pure Xlib, GTK+, or KDE, and a developer-friendly API.
+ .
+ This package provides the Qt6 IM Module frontend, which is necessary
+ for Fcitx users who would like to use Qt6 applications.

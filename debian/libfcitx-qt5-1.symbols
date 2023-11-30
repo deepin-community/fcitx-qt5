@@ -43,11 +43,8 @@ libFcitxQt5DBusAddons.so.1 libfcitx-qt5-1 #MINVER#
  (c++)"FcitxQtInputMethodItem::setUniqueName(QString const&)@Base" 1.0.0
  (c++)"FcitxQtInputMethodItem::uniqueName() const@Base" 1.0.0
  (c++|optional|arch=arm64 armhf)"FcitxQtInputMethodProxy::ConfigureIM(QString const&)@Base" 1.0.0
- (c++|optional|arch=armhf powerpc ppc64el)"FcitxQtInputMethodProxy::CreateIC()@Base" 1.0.0
- (c++|optional|arch=!amd64 !i386)"FcitxQtInputMethodProxy::CreateIC(unsigned int&, unsigned int&, unsigned int&, unsigned int&)@Base" 1.0.0
  (c++)"FcitxQtInputMethodProxy::FcitxQtInputMethodProxy(QString const&, QString const&, QDBusConnection const&, QObject*)@Base" 1.0.0
  (c++|optional|arch=armhf i386)"FcitxQtInputMethodProxy::GetCurrentState()@Base" 1.0.0
- (c++|optional|arch=!amd64 !arm64)"FcitxQtInputMethodProxy::GetCurrentUI()@Base" 1.0.0
  (c++|optional|arch=armhf i386)"FcitxQtInputMethodProxy::ReloadAddonConfig(QString const&)@Base" 1.0.0
  (c++|optional|arch=arm64 i386 powerpc)"FcitxQtInputMethodProxy::SetCurrentIM(QString const&)@Base" 1.0.0
  (c++)"FcitxQtInputMethodProxy::metaObject() const@Base" 1.0.0
@@ -115,7 +112,6 @@ libFcitxQt5DBusAddons.so.1 libfcitx-qt5-1 #MINVER#
  (c++|optional)"FcitxQtInputMethodProxy::CreateIC()::{lambda()#1}::operator()() const::qstring_literal@Base" 1.0.5
  (c++|optional)"FcitxQtInputMethodProxy::ToggleIM()::{lambda()#1}::operator()() const::qstring_literal@Base" 1.0.5
  (c++|optional)"FcitxQtInputMethodProxy::Configure()::{lambda()#1}::operator()() const::qstring_literal@Base" 1.0.5
- (c++|optional)"FcitxQtInputMethodProxy::ReloadConfigUI()@Base" 1.0.6
  (c++|optional)"FcitxQtInputContextProxy::MouseEvent(int)::{lambda()#1}::operator()() const::qstring_literal@Base" 1.0.5
  (c++|optional)"FcitxQtInputContextProxy::SetCapacity(unsigned int)::{lambda()#1}::operator()() const::qstring_literal@Base" 1.0.5
  (c++|optional)"FcitxQtInputContextProxy::SetCursorRect(int, int, int, int)::{lambda()#1}::operator()() const::qstring_literal@Base" 1.0.5

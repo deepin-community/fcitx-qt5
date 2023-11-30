@@ -29,7 +29,6 @@
 
 #include <errno.h>
 #include <signal.h>
-#include <unistd.h>
 
 // utils function in fcitx-utils and fcitx-config
 bool _pid_exists(pid_t pid) {
@@ -187,11 +186,7 @@ const QString &FcitxQtConnectionPrivate::socketFile() {
 
     QString home = QString::fromLocal8Bit(qgetenv("XDG_CONFIG_HOME"));
     if (home.isEmpty()) {
-        uid_t uid = getuid();
-        if (uid == 0) {
-            home = QDir::homePath().append(QLatin1String("/root/.config"));
-        }
-        //home = QDir::homePath().append(QLatin1Literal("/.config"));
+        home = QDir::homePath().append(QLatin1Literal("/.config"));
     }
     m_socketFile = QString("%1/fcitx/dbus/%2").arg(home).arg(filename);
 
