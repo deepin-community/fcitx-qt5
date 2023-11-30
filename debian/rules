@@ -13,3 +13,7 @@ CXXFLAGS += $(CPPFLAGS)
 
 %:
 	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	        -DENABLE_QT6=On
